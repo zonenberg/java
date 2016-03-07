@@ -29,6 +29,11 @@ public class Moo extends Zoo{
         
         //Inheriting a member of another class (Moo extends Zoo)
         System.out.println("A Zoo says: " + this.coolMethod());
+        
+        //Inheriting a member of another class (Moo extends Zoo). Inherited 
+        // method is implicitly called with this. even it is not written
+        System.out.println("A Zoo says .this : " + coolMethod());
+        
         //Print parameter        
         System.out.println("A Zoo says: " + z.parameter);        
         
@@ -36,7 +41,7 @@ public class Moo extends Zoo{
         System.out.println("A Zoo says: " + this.parameter);    
         
        //Print method        
-        System.out.println("A Zoo says: " + this.insideMoo());   
+        System.out.println("A Zoo says: " + Moo.insideMoo());   
         
     }
     
