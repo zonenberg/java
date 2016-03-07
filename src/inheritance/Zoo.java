@@ -5,13 +5,21 @@
  */
 
 package inheritance;
+//import Class from some package
+import protecting.Parent;
 
 /**
  *
  * @author jiri.sonnenschein
  */
-public class Zoo {
-    public String parameter = "Returned string s";
+public class Zoo extends Parent {
+    
+    //Not possible to use reference for protected parameter
+    //Parent p = new Parent();
+    //public String parameter = p.protect;
+    
+    
+    public String parameter = protect;
     public String coolMethod() {
         return "Returned string from coolMethod()";
     }   
