@@ -7,6 +7,7 @@
 package inheritance;
 
 
+
 /**
  *
  * @author jiri.sonnenschein
@@ -38,7 +39,7 @@ public class Moo extends Zoo{
         System.out.println("A Zoo says: " + z.parameter);        
         
         //Print parameter        
-        System.out.println("A Zoo says: " + this.parameter);    
+        System.out.println("A Zoo says: " + this.protect);    
         
        //Print method        
         System.out.println("A Zoo says: " + Moo.insideMoo());   
