@@ -14,12 +14,13 @@ import protecting.Parent;
  */
 public class Zoo extends Parent {
     
-    //Not possible to use reference for protected parameter
+    //Not possible to use reference for protected parameter (won't compile)
     //Parent p = new Parent();
     //public String parameter = p.protect;
     
     
-    public String parameter = protect;
+    String parameter = protect;
+    public int saveDef = def;
     public String coolMethod() {
         return "Returned string from coolMethod()";
     }   
