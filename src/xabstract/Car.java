@@ -10,6 +10,6 @@ package xabstract;
  *
  * @author Zonenberg
  */
-public class Car {
+public abstract class Car extends Vehicle {
     
 }
