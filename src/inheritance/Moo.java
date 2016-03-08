@@ -5,6 +5,7 @@
  */
 
 package inheritance;
+import xabstract.Mini;
 
 
 
@@ -43,6 +44,11 @@ public class Moo extends Zoo{
         
        //Print method        
         System.out.println("A Zoo says: " + Moo.insideMoo());   
+        
+        Mini mini = new Mini();
+
+        //Print method        
+        System.out.println("A Zoo says: " + mini.goUphill());  
         
     }
     
